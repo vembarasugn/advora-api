@@ -41,34 +41,32 @@ useEffect(()=> {
 
 return(
   <section>
-      <TextInside> PLEASE FIND USER API DATA LIST IN THE BELOW.</TextInside>
+    <TextInside> PLEASE FIND USER API DATA LIST IN THE BELOW.</TextInside>
     <Grid {...propStyleGrid}>
-              { apidata.map((item,i) => (
-             <Grid
-              item
-              xs={12}
-              sm={4}
-              md={4}
-              lg={4}
-              xl={4}
-              style={{ display: "flex", justifyContent: "center" }}
-             >
-  
-             <Card sx={{ minWidth:335 , maxWidth:335 }} style={{backgroundColor: "#f3f3f3f1", borderRadius:"16px" , minHeight:"230" , borderColor:"grey", borderWidth:"2px"}} variant="outlined">
-             <CardContent>
-             <Typography gutterBottom variant="variant="h6"" component="div" style={{color:"darkgrey"}}>
+        { apidata.map((item,i) => (
+        <Grid
+        item
+        xs={12}
+        sm={4}
+        md={4}
+        lg={4}
+        xl={4}
+        style={{ display: "flex", justifyContent: "center" }}
+        >
+        <Card sx={{ minWidth:335 , maxWidth:335 }} style={{backgroundColor: "#f3f3f3f1", borderRadius:"16px" , minHeight:"230" , borderColor:"grey", borderWidth:"2px"}} variant="outlined">
+          <CardContent>
+            <Typography gutterBottom variant="h6" component="div" style={{color:"darkgrey"}}>
               UserID : {item.user_id}
-             </Typography>
-             <br/>
-             <Typography gutterBottom variant="variant="h6"" style={{color:"darkgrey"}}>
+            </Typography>
+            <br/>
+            <Typography gutterBottom variant="h6" style={{color:"darkgrey"}}>
               Name : {item.name}
-             </Typography>
-             </CardContent>
-             </Card>
-             </Grid>
-             ))}
-             </Grid>
-
+            </Typography>
+          </CardContent>
+        </Card>
+        </Grid>
+          ))}
+        </Grid>
     <ButtonInside as="a"
       onClick={() => navigate("/")}
       target="_blank"
