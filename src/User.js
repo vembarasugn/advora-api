@@ -54,13 +54,13 @@ return(
               style={{ display: "flex", justifyContent: "center" }}
              >
   
-             <Card sx={{ minWidth:335 , maxWidth:335 }} style={{backgroundColor: "#f3f3f3f1", borderRadius:"16px" , minHeight:"230" , borderColor:"grey", borderWidth:"3px"}} variant="outlined">
-             <CardContent  className="Card-text" >
-             <Typography gutterBottom variant="h5" component="div">
+             <Card sx={{ minWidth:335 , maxWidth:335 }} style={{backgroundColor: "#f3f3f3f1", borderRadius:"16px" , minHeight:"230" , borderColor:"grey", borderWidth:"2px"}} variant="outlined">
+             <CardContent>
+             <Typography gutterBottom variant="variant="h6"" component="div" style={{color:"darkgrey"}}>
               UserID : {item.user_id}
              </Typography>
              <br/>
-             <Typography gutterBottom variant="body2">
+             <Typography gutterBottom variant="variant="h6"" style={{color:"darkgrey"}}>
               Name : {item.name}
              </Typography>
              </CardContent>
