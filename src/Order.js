@@ -91,6 +91,13 @@ return(
       primary
       > Order JSON Data 
     </ButtonInside>
+    <ButtonInside as="a"
+      onClick={() => navigate("/Orderchart")}
+      target="_blank"
+      rel="noopener"
+      primary
+      > Data Visualization
+    </ButtonInside>
 </section>
 );
 }

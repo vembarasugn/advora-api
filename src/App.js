@@ -7,6 +7,7 @@ import User from './User';
 import Product from './Product';
 import Order from './Order';
 import Productchart from './Productchart';
+import Orderchart from './Orderchart';
 
 function App() {
   
@@ -19,6 +20,7 @@ return(
        <Route exact path='/Product' element={<Product/>}/>
        <Route exact path='/Order' element={<Order/>}/>
        <Route exact path='/Productchart' element={<Productchart/>}/>
+       <Route exact path='/Orderchart' element={<Orderchart/>}/>
      </Routes>
   <Footer/>
 </Router>
