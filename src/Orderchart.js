@@ -1,28 +1,12 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
-//import { useEffect, useState } from 'react';
+import {useNavigate} from "react-router-dom";
+import {ButtonInside,TextInside} from './style';
 
 function Orderchart(){
 
-    //const [order, setOrder] = useState([]); 
-    //const [quantity, setQuantity] = useState([]);
-    
-    // useEffect(()=> {
-    //     const getOrderdata = async()=>{
-    //     const url ="https://assessment.api.vweb.app/orders";
-    //     try{
-    //       const response = await fetch(url);
-    //       const data = await response.json();
-    //       //setOrder(data.map((item)=>item.order_id));
-    //       //setQuantity(data.map((item)=>item.quantity));
-    //     }catch(err){
-    //         console.log(err);
-    //     }
-    //   };
-    //   getOrderdata();
-    // },[]);
+  const navigate = useNavigate();
 
-    
   const series = [
     {
       name:"Products Ordered in Quantity", 
@@ -41,12 +25,22 @@ function Orderchart(){
 
   return(
      <section>
+      <TextInside> PLEASE FIND ORDER API DATA VISIUALISATION IN THE BELOW.</TextInside>
          <Chart
           options={options}
           series={series}
           type="bar"
-          width="450"
+          width="650"
+          height="650"
         />
+      <ButtonInside as="a"
+      onClick={() => navigate("/")}
+      target="_blank"
+      rel="noopener"
+      primary
+      > Back To Home 
+     </ButtonInside>
+
      </section>
     )
 }
