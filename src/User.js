@@ -7,6 +7,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Grid } from "@material-ui/core";
+//import Userdata from "./Userdata";
 
 const styleGrid = {
   paddingBottom: "12px",
@@ -25,7 +26,7 @@ function User() {
   
   const [apidata,setApidata] = useState([]);
 
-  const apiadv = "https://assessment.api.vweb.app/users"; 
+  const apiadv = "https://jsonserverapi-production.up.railway.app/User"; 
   
   const data = () => {
      fetch(apiadv)
@@ -75,12 +76,12 @@ return(
       > Back To Home 
     </ButtonInside>
     <ButtonInside as="a"
-      href="https://assessment.api.vweb.app/users"
+      href="https://jsonserverapi-production.up.railway.app/User"
       target="_blank"
       rel="noopener"
       primary
       >User JSON Data 
-    </ButtonInside>
+    </ButtonInside>   
   </section>
 );
 }

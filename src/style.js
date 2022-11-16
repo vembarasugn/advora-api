@@ -8,10 +8,12 @@ export const Button = styled.button`
   margin: 2rem 0.2rem;
   margin-left:4rem;
   width:11rem;
-  background:transparent;
+  background:#59CE8F;
   color:grey;
   border:2px solid #59CE8F;
-  margin-top:2em;
+  margin-top:3em;
+  padding-bottom:20px;
+  padding-top:20px;
   text-decoration:none;
   Text-align:center;
   

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {useState,useEffect} from 'react';
 import {useNavigate } from "react-router-dom";
@@ -7,6 +6,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Grid } from "@material-ui/core";
+//import Productdata from "./Productdata";
 
 const styleGrid = {
   padding: "12px",
@@ -25,7 +25,7 @@ function Product() {
 
   const [apidata,setApidata] = useState([]);
 
-  const apiadv = "https://assessment.api.vweb.app/products"; 
+  const apiadv = "https://jsonserverapi-production.up.railway.app/products"; 
   
   const data = () => {
      fetch(apiadv)
@@ -77,12 +77,12 @@ return(
         > Back To Home 
     </ButtonInside>
     <ButtonInside as="a"
-        href="https://assessment.api.vweb.app/products"
+        href="https://jsonserverapi-production.up.railway.app/products"
         target="_blank"
         rel="noopener"
         primary
         > Product JSON Data 
-    </ButtonInside>
+    </ButtonInside> 
     <ButtonInside as="a"
         onClick={() => navigate("/Productchart")}
         target="_blank"
