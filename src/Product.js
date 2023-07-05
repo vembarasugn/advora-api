@@ -25,7 +25,7 @@ function Product() {
 
   const [apidata,setApidata] = useState([]);
 
-  const apiadv = "https://jsonserverapi-production.up.railway.app/products"; 
+  const apiadv = "https://jsonserver-sugo.onrender.com/Products"; 
   
   const data = () => {
      fetch(apiadv)
@@ -77,7 +77,7 @@ return(
         > Back To Home 
     </ButtonInside>
     <ButtonInside as="a"
-        href="https://jsonserverapi-production.up.railway.app/products"
+        href="https://jsonserver-sugo.onrender.com/Products"
         target="_blank"
         rel="noopener"
         primary
